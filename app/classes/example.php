@@ -11,6 +11,7 @@ class example
     public $x;
     public $y;
     public $z;
+    public $data = [];
 
 
     public function index()
@@ -22,6 +23,13 @@ class example
 
         $this->a = 100;
 
+        $this->data = [10,202,30,40,'BITM', 100.200, true];
+
+//        echo $this->data[9];
+        foreach ($this->data as $item){
+            echo $item;
+            echo '<br/>';
+        }
 
 
 
